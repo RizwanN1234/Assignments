@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Hub</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY NAVIGATION
+  ============================================================ -->
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg shopnest-navbar">
+      <div class="container-fluid px-lg-5">
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#">FashionHub</a>
+
+        <!-- Mobile toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="#categories">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="#categories">Women</a></li>
+            <li class="nav-item"><a class="nav-link" href="#categories">Accessories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+          </ul>
+
+          <!-- Icons: search, wishlist, account, cart -->
+          <div class="nav-icons d-flex align-items-center gap-3 mt-3 mt-lg-0">
+            <i class="bi bi-search"></i>
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-person"></i>
+            <span class="cart-wrap">
+              <i class="bi bi-bag"></i>
+              <span class="cart-count">2</span>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO BANNER
+    ============================================================ -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">New Summer Collection</h1>
+        <p class="hero-subtitle">
+          Discover the definitive high-fashion utility pieces for the modern era.<br />
+          Minimalism meets uncompromising structure.
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-dark-cta">Shop Now</a>
+          <a href="#categories" class="btn btn-outline-cta">Explore Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CATEGORY SHOWCASE
+    ============================================================ -->
+    <section id="categories" class="container-fluid px-lg-5 py-5">
+      <h2 class="section-heading">Shop by Category</h2>
+
+      <div class="category-grid">
+
+        <!-- LEFT: Men (tall, fills right column's height) -->
+        <a href="#products" class="cat-tile cat-tall">
+          <img src="image/category/Man.png" alt="Men" />
+          <span class="cat-label">Men</span>
+        </a>
+
+        <!-- RIGHT: Women + small row -->
+        <div class="cat-right">
+
+          <!-- Women (top right) -->
+          <a href="#products" class="cat-tile cat-wide">
+            <img src="image/category/Women.png" alt="Women" />
+            <span class="cat-label">Women</span>
+          </a>
+
+          <!-- Two small tiles -->
+          <div class="cat-small-row">
+            <a href="#products" class="cat-tile cat-small">
+              <img src="image/category/Accessories.png" alt="Accessories" />
+              <span class="cat-label">Accessories</span>
+            </a>
+
+            <a href="#products" class="cat-tile cat-small">
+              <img src="image/category/kid.png" alt="Kids" />
+              <span class="cat-label">Kids</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURED PRODUCTS
+    ============================================================ -->
+    <section id="products" class="container-fluid px-lg-5 py-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="section-heading mb-0">Featured Products</h2>
+        <a href="#" class="view-all">View All <i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="image/Products/Outerwear.png" alt="Structured Utility Jacket" />
+            </div>
+            <div class="product-info">
+              <p class="product-cat">Outerwear</p>
+              <h3 class="product-name">Structured Utility Jacket</h3>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="rating-count">(42)</span>
+              </div>
+              <div class="product-pricing">
+                <span class="price-old">$620</span>
+                <span class="price-new">$450</span>
+              </div>
+              <button class="btn btn-add-cart w-100">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="image/Products/Tops.png" alt="Oversized Poplin Shirt" />
+            </div>
+            <div class="product-info">
+              <p class="product-cat">Tops</p>
+              <h3 class="product-name">Oversized Poplin Shirt</h3>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span class="rating-count">(28)</span>
+              </div>
+              <div class="product-pricing">
+                <span class="price-old">$240</span>
+                <span class="price-new">$180</span>
+              </div>
+              <button class="btn btn-add-cart w-100">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="image/Products/Bottoms.png" alt="Tailored Wide-Leg Trousers" />
+              <span class="badge-new">New</span>
+            </div>
+            <div class="product-info">
+              <p class="product-cat">Bottoms</p>
+              <h3 class="product-name">Tailored Wide-Leg Trousers</h3>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <span class="rating-count">(56)</span>
+              </div>
+              <div class="product-pricing">
+                <span class="price-old">$360</span>
+                <span class="price-new">$280</span>
+              </div>
+              <button class="btn btn-add-cart w-100">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="product-card">
+            <div class="product-img-wrap">
+              <img src="image/Products/Footwear.png" alt="Monolith Leather Boots" />
+            </div>
+            <div class="product-info">
+              <p class="product-cat">Footwear</p>
+              <h3 class="product-name">Monolith Leather Boots</h3>
+              <div class="product-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <span class="rating-count">(19)</span>
+              </div>
+              <div class="product-pricing">
+                <span class="price-old">$780</span>
+                <span class="price-new">$650</span>
+              </div>
+              <button class="btn btn-add-cart w-100">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         NEWSLETTER SIGNUP
+    ============================================================ -->
+    <section id="newsletter" class="newsletter-section">
+      <div class="container text-center">
+        <h2 class="newsletter-title">Join the FashionHub List</h2>
+        <p class="newsletter-sub">
+          Be the first to know about new drops, exclusive offers, and editorials.
+        </p>
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+          <input
+            type="email"
+            class="newsletter-input"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit" class="btn btn-dark-cta">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" class="site-footer">
+    <div class="container-fluid px-lg-5 py-5">
+      <div class="row g-4">
+
+        <!-- Brand col -->
+        <div class="col-12 col-md-4">
+          <h3 class="footer-logo">FashionHub</h3>
+          <p class="footer-tagline">
+            High-fashion utility for the modern era. Minimalist aesthetics
+            meeting uncompromising quality.
+          </p>
+        </div>
+
+        <!-- Support col -->
+        <div class="col-6 col-md-2">
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping &amp; Returns</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Company col -->
+        <div class="col-6 col-md-2">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect col -->
+        <div class="col-12 col-md-4">
+          <h4 class="footer-heading">Connect</h4>
+          <div class="footer-social mb-3">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+          <address class="footer-address">
+            123 Fashion Ave<br />
+            NY, NY 10001<br />
+            Mon–Fri, 9am–6pm
+          </address>
+        </div>
+
+      </div>
+
+      <hr class="footer-divider" />
+
+      <p class="footer-copy">
+        &copy; 2026 FashionHub. All rights reserved. High-fashion utility for the
+        modern era.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (for mobile navbar toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
