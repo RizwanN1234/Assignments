@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Quiz App</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="quiz-container">
+    <!-- Header section (shows question number and score) -->
+    <header class="quiz-header">
+      <h1>JavaScript Quiz</h1>
+      <div class="quiz-status">
+        <span id="question-counter">Question 1 of 8</span>
+        <span id="score-display">Score: 0</span>
+      </div>
+    </header>
+
+    <!-- Quiz content area -->
+    <section id="quiz-area">
+      <h2 id="question-text">Loading question...</h2>
+      <div id="options-container" class="options-grid">
+        <!-- Option buttons will be injected here via JavaScript -->
+      </div>
+      
+      <button id="next-btn" class="btn btn-next" disabled>Next Question</button>
+    </section>
+
+    <!-- Final score screen (hidden by default) -->
+    <section id="result-screen" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p id="final-score-text"></p>
+      <p id="feedback-text"></p>
+      <button id="restart-btn" class="btn btn-restart">Restart Quiz</button>
+    </section>
+  </main>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
