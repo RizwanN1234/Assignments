@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "category": "Electronics",
+    "price": 89.99,
+    "originalPrice": 129.99,
+    "rating": 4.5,
+    "imageUrl": "https://picsum.photos/seed/headphones/300/200"
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "category": "Electronics",
+    "price": 199.99,
+    "originalPrice": 249.99,
+    "rating": 4.8,
+    "imageUrl": "https://picsum.photos/seed/smartwatch/300/200"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 49.99,
+    "originalPrice": 79.99,
+    "rating": 4.2,
+    "imageUrl": "https://picsum.photos/seed/speaker/300/200"
+  },
+  {
+    "id": 4,
+    "name": "Cotton T-Shirt",
+    "category": "Clothing",
+    "price": 19.99,
+    "originalPrice": 29.99,
+    "rating": 4.0,
+    "imageUrl": "https://picsum.photos/seed/tshirt/300/200"
+  },
+  {
+    "id": 5,
+    "name": "Denim Jacket",
+    "category": "Clothing",
+    "price": 59.99,
+    "originalPrice": 89.99,
+    "rating": 4.6,
+    "imageUrl": "https://picsum.photos/seed/jacket/300/200"
+  },
+  {
+    "id": 6,
+    "name": "Running Shoes",
+    "category": "Footwear",
+    "price": 79.99,
+    "originalPrice": 109.99,
+    "rating": 4.7,
+    "imageUrl": "https://picsum.photos/seed/shoes/300/200"
+  },
+  {
+    "id": 7,
+    "name": "Leather Boots",
+    "category": "Footwear",
+    "price": 120.00,
+    "originalPrice": 160.00,
+    "rating": 4.4,
+    "imageUrl": "https://picsum.photos/seed/boots/300/200"
+  },
+  {
+    "id": 8,
+    "name": "JavaScript Basics Book",
+    "category": "Books",
+    "price": 25.99,
+    "originalPrice": 35.99,
+    "rating": 4.9,
+    "imageUrl": "https://picsum.photos/seed/jsbook/300/200"
+  },
+  {
+    "id": 9,
+    "name": "CSS Mastery",
+    "category": "Books",
+    "price": 29.99,
+    "originalPrice": 39.99,
+    "rating": 4.5,
+    "imageUrl": "https://picsum.photos/seed/cssbook/300/200"
+  },
+  {
+    "id": 10,
+    "name": "Gaming Mouse",
+    "category": "Electronics",
+    "price": 39.99,
+    "originalPrice": 59.99,
+    "rating": 4.3,
+    "imageUrl": "https://picsum.photos/seed/mouse/300/200"
+  },
+  {
+    "id": 11,
+    "name": "Hoodie",
+    "category": "Clothing",
+    "price": 45.00,
+    "originalPrice": 65.00,
+    "rating": 4.1,
+    "imageUrl": "https://picsum.photos/seed/hoodie/300/200"
+  },
+  {
+    "id": 12,
+    "name": "Sandals",
+    "category": "Footwear",
+    "price": 25.00,
+    "originalPrice": 40.00,
+    "rating": 3.9,
+    "imageUrl": "https://picsum.photos/seed/sandals/300/200"
+  }
+]

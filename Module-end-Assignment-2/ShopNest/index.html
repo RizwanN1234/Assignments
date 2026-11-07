@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ShopNest</h1>
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <div class="cart-icon">
+            🛒 Cart: <span id="cartCount">0</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="All">All</button>
+                <button class="filter-btn" data-category="Electronics">Electronics</button>
+                <button class="filter-btn" data-category="Clothing">Clothing</button>
+                <button class="filter-btn" data-category="Footwear">Footwear</button>
+                <button class="filter-btn" data-category="Books">Books</button>
+            </div>
+        </aside>
+
+        <!-- Products Section -->
+        <main>
+            <div id="product-grid" class="product-grid"></div>
+            <div id="no-results" class="no-results hidden">
+                No products found.
+            </div>
+        </main>
+
+        <!-- Cart Section -->
+        <aside class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items-container"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cartTotal">0.00</span></h3>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
